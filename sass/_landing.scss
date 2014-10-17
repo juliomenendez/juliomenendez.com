@@ -1,0 +1,31 @@
+body.home {
+  margin: 0;
+  padding: 0;
+}
+
+.landing-container {
+  position: relative;
+  line-height: 0;
+  width: 100%;
+  margin-bottom: $base-line-height;
+  background-image: url(https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png);
+  background-size: cover;
+
+  .copy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    z-index: 999;
+    text-align: center;
+    @include transform(translate(-50%, -50%));
+
+    p {
+      line-height: 1.5em;
+      padding: 1em 2em;
+      position: relative;
+      color: white;
+      font-weight: 800;
+    }
+  }
+}
