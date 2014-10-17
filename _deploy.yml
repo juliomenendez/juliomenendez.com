@@ -1,0 +1,21 @@
+# Credentials are taken from the environment. Use .env if needed.
+
+method: s3                                # How do you want to deploy? git, rsync or s3.
+site_dir: public                          # Location of your your static site files.
+
+bucket_name: juliomenendez.com            # Name of the S3 bucket where these files will be stored.
+remote_path: /                            # relative path on bucket where files should be copied.
+
+# region: us-east-1                       # Region where your bucket is located.
+# delete: true                            # Remove files from destination which do not match source files.
+verbose: true                             # Print out all file operations.
+
+headers:
+  - filename: '^assets.*\.js$'
+    expires: '+3 years'
+    cache_control: 'max-age=94608000'
+    content_type: 'application/javascript'
+  - filename: '^assets.*\.css$'
+    expires: '+3 years'
+    cache_control: 'max-age=94608000'
+    content_type: 'text/css'
