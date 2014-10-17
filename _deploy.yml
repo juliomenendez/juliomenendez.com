@@ -7,7 +7,7 @@ bucket_name: juliomenendez.com            # Name of the S3 bucket where these fi
 remote_path: /                            # relative path on bucket where files should be copied.
 
 # region: us-east-1                       # Region where your bucket is located.
-# delete: true                            # Remove files from destination which do not match source files.
+delete: true                              # Remove files from destination which do not match source files.
 verbose: true                             # Print out all file operations.
 
 headers:
