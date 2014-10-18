@@ -1,31 +1,80 @@
 body.home {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .landing-container {
-  position: relative;
-  line-height: 0;
-  width: 100%;
-  margin-bottom: $base-line-height;
-  background-image: url(https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png);
-  background-size: cover;
+  @include outer-container;
 
-  .copy {
+  .landing-background {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: auto;
-    z-index: 999;
-    text-align: center;
-    @include transform(translate(-50%, -50%));
+    line-height: 0;
+    width: 100%;
+    background-size: cover;
 
-    p {
-      line-height: 1.5em;
-      padding: 1em 2em;
-      position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+  }
+
+  .copy-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 50%;
+    padding: 10px;
+    z-index: 999;
+
+    .copy {
+      float: right;
+      text-align: center;
+    }
+
+    .copy-line {
+      margin-bottom: 4px;
+    }
+
+    h1, h3 {
       color: white;
-      font-weight: 800;
+      display: inline;
+      background: rgba(0, 0, 0, .5);
+      padding: 0 16px;
+    }
+
+    h1 {
+      font-size: $h1-font-size * 1.5;
+      text-transform: uppercase;
+    }
+
+    @include media($mobile and $over-the-nose) {
+      top: 10px;
+      bottom: auto;
+      text-align: right;
+
+      .copy {
+        text-align: right;
+      }
+
+      h1 {
+        font-size: $h1-font-size - 0.40;
+        padding: 0 4px;
+      }
+
+      h3 {
+        font-size: $h3-font-size - 0.10;
+        padding: 0 4px;
+      }
+    }
+
+    @include media($large-screen) {
+      .copy {
+        float: left;
+        margin-left: 50%;
+      }
     }
   }
 }

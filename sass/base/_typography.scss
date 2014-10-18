@@ -20,28 +20,20 @@ h6 {
 }
 
 h1 {
-  font-size: 1.9em;
+  font-size: $h1-font-size;
   font-weight: 700;
   margin-bottom: .3em;
-
-  @include media($medium-screen) {
-    font-size: 2.6em;
-  }
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: $h2-font-size;
   font-weight: 400;
   line-height: 1.25em;
   margin-bottom: .9em;
-
-  @include media($medium-screen) {
-    font-size: 1.5em;
-  }
 }
 
 h3 {
-  font-size: 1.4em;
+  font-size: $h3-font-size;
   font-style: italic;
   font-weight: 400;
   line-height: 1.3em;
