@@ -26,7 +26,7 @@
                 elementLeft = (windowWidth - elementWidth) / 3;
                 elementTop = (windowHeight - elementHeight) / 2;
                 $background.css({
-                    'height': elementHeight,
+                    'height': elementHeight + 10,
                     'width': elementWidth,
                     'left': elementLeft,
                     'top': elementTop
