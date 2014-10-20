@@ -13,7 +13,8 @@
                 elementLeft,
                 elementTop,
                 scale,
-                $background = $('.landing-background');
+                $background = $('.landing-background'),
+                $landingContainer = $('.landing-container');
             var updateBackground = function() {
                 windowWidth = $window.width();
                 windowHeight = $window.height();
@@ -35,6 +36,10 @@
                 updateBackground();
             });
             updateBackground();
+            $landingContainer.css({
+                'width': windowWidth,
+                'height': windowHeight
+            });
         }
     });
 })(jQuery);

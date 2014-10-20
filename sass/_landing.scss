@@ -6,6 +6,8 @@ body.home {
 
 .landing-container {
   @include outer-container;
+  overflow-x: hidden;
+  position: relative;
 
   .landing-background {
     position: absolute;
