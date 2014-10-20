@@ -19,6 +19,8 @@ group :development do
   gem 'bourbon'
   gem 'bitters'
   gem 'aws-sdk'
+  gem 'jekyll-assets'
+  gem 'uglifier'
 end
 
 gem 'sinatra', '~> 1.4.2'
