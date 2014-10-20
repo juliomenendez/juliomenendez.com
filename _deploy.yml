@@ -3,7 +3,7 @@
 method: s3                                # How do you want to deploy? git, rsync or s3.
 site_dir: public                          # Location of your your static site files.
 
-bucket_name: juliomenendez.com            # Name of the S3 bucket where these files will be stored.
+bucket_name: www.juliomenendez.com        # Name of the S3 bucket where these files will be stored.
 remote_path: /                            # relative path on bucket where files should be copied.
 
 # region: us-east-1                       # Region where your bucket is located.
