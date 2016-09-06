@@ -1,5 +1,4 @@
-{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
-{% include head.html %}
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}{% include head.html %}
 <body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} class="{% unless page.body_id %}home{% endunless %} {% if page.sidebar == false %} no-sidebar{% endif %}{% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} collapse-sidebar sidebar-footer{% endif %}">
 
 {{ content | expand_urls: root_url }}

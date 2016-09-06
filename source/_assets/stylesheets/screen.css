@@ -221,11 +221,6 @@ textarea {
 }
 
 input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
 }
 
 input[type="checkbox"],
@@ -289,14 +284,8 @@ dl dd {
 
 button,
 input[type="submit"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
   border: none;
   cursor: pointer;
-  user-select: none;
   vertical-align: middle;
   white-space: nowrap;
 }
